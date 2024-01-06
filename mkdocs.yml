@@ -1,0 +1,137 @@
+# Reference: https://squidfunk.github.io/mkdocs-material/reference/
+site_name: 2023 SANS Holiday Hack Challenge
+site_author: Mark Mulvaney
+theme:
+  icon:
+    # Material for MkDocs bundles several icon sets:
+    # - Material Design (https://materialdesignicons.com/)
+    # - FontAwesome (https://fontawesome.com/search?m=free)
+    # - Octicons (https://octicons.github.com/)
+    # - Simple Icons (https://simpleicons.org/)
+    # Below are some suitable logo examples: 
+    # logo: fontawesome/regular/snowflake
+    # logo: fontawesome/solid/sleigh
+    # logo: fontawesome/solid/candy-cane
+    # logo: fontawesome/solid/tree
+    logo: fontawesome/solid/umbrella-beach
+  name: material
+  favicon: img/misc/favicon.ico
+  features:
+    - toc.integrate
+    - content.code.copy
+    - navigation.sections
+    #- navigation.instant
+    #- navigation.top
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.expand
+    #- navigation.top
+    #- navigation.prune
+    #- toc.follow
+  palette:
+    # Material for MkDocs supports a light (default) and dark (slate) theme.
+    # Each mode supports configurable primary and accent colors.
+    # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+    # Primary colors:
+    # red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal,
+    # green, light green, lime, yellow, amber, orange, deep orange, brown,
+    # grey, blue grey, black, and white.
+    # Accent colors:
+    # red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal,
+    # green, light green, lime, yellow, amber, orange, and deep orange.
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/markmjr
+      name: Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/markmjr
+      name: GitHub
+    #- icon: fontawesome/brands/instagram
+    #  link: https://www.instagram.com/<instagram_username>
+    #  name: Instagram
+extra_css:
+  - css/extra.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - js/tablesort.js
+markdown_extensions:
+  - abbr
+  - attr_list
+  - admonition
+  - meta
+  - footnotes
+  - def_list
+  - md_in_html
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 2
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+nav:
+# The 'nav' section defines the content of the sidebar navigation.
+- Welcome: 'index.md'
+- Objectives:
+  - Christmas Island:
+    - Snowball Hero: 'objectives/o1_ci_sh.md'
+    - Linux 101: 'objectives/o2_ci_l101.md'
+    - Reportinator: 'objectives/o3_ci_rep.md'
+    - Azure 101: 'objectives/o4_ci_az101.md'
+  - Island of Misfit Toys:
+    - Luggage Lock: 'objectives/o5_mt_ll.md'
+    - Linux PrivEsc: 'objectives/o6_mt_priv.md'
+    - Hashcat: 'objectives/o14_mt_hash.md'
+  - Steampunk Island:
+    - Faster Lock Combination: 'objectives/o7_si_flc.md'
+    - The Captain's Comms: 'objectives/o17_si_cc.md'
+    - Active Directory: 'objectives/o18_si_ad.md'
+  - Film Noir Island:
+    - Na'an: 'objectives/o11_fn_nan.md'
+    - KQL Kraken Hunt: 'objectives/o12_fn_kql.md'
+    - Phish Detection Agency: 'objectives/o13_fn_phish.md'
+  - Pixel Island:
+    - Elf Hunt: 'objectives/o15_pi_eh.md'
+    - Certificate SSHenanigans: 'objectives/o16_pi_ssh.md'
+  - Space Island:
+    - Space Island Door Access Speaker: 'objectives/o19_sp_door.md'
+    - Camera Access: 'objectives/o20_sp_camera.md'
+    - Missile Diversion: 'objectives/o21_sp_diversion.md'
+  - Game Cartidges:
+    - Game Cartridges Vol 1: 'objectives/o8_gc1.md'
+    - Game Cartridges Vol 2: 'objectives/o9_gc2.md'
+    - Game Cartridges Vol 3: 'objectives/o10_gc3.md'
+  - BONUS!:
+    - Fishing Guide: 'objectives/bonus_guide.md'
+    - Fishing Mastery: 'objectives/bonus_master.md'
+- Extras:
+  - Easter Eggs: 'easter_eggs.md'
