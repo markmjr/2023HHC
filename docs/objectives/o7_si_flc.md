@@ -38,7 +38,7 @@ The third number can be found by turning the dial the opposite direction and loo
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
-    <source src="/img/objectives/o7/1.webm" type="video/webm">
+    <source src="../img/objectives/o7/1.webm" type="video/webm">
   </video>
 </figure>
 
@@ -46,7 +46,7 @@ Based on this, we see the sticking point is at about 30, which would put the fir
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
-    <source src="/img/objectives/o7/2.webm" type="video/webm">
+    <source src="../img/objectives/o7/2.webm" type="video/webm">
   </video>
 </figure>
 
@@ -54,7 +54,7 @@ We see the second number is 5, so now we just try every number until we are able
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
-    <source src="/img/objectives/o7/3.webm" type="video/webm">
+    <source src="../img/objectives/o7/3.webm" type="video/webm">
   </video>
 </figure>
 
